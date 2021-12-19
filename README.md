@@ -27,7 +27,8 @@ man bash |grep history -n
 1886:              value  less  than zero, the number of history entries is not limited.  By default, the number of history entries is set to the value of the HISTSIZE shell variable.
 
 Таким образом, в строке мануала 1886 указано, что в переменной HISTSIZE задается размер журнала команд. 
-Ignoreboth - опция, при которой не выводятся команды, начинающиеся с пробела и дублирующиеся команды. 
+Ignoreboth - опция, при которой не выводятся команды, начинающиеся с пробела и дублирующиеся команды: 
+
 HISTCONTROL
               A  colon-separated list of values controlling how commands are saved on the history list.  If the list of values includes ignorespace, lines which begin with a space char‐
               acter are not saved in the history list.  A value of ignoredups causes lines matching the previous history entry to not be saved.  A value of ignoreboth is  shorthand  for
@@ -36,4 +37,4 @@ HISTCONTROL
               ject  to the value of HISTIGNORE.  The second and subsequent lines of a multi-line compound command are not tested, and are added to the history regardless of the value of
               HISTCONTROL.
 	      
-	      
+9. оророр	      
