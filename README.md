@@ -46,8 +46,10 @@ HISTCONTROL
 
 10. Создать 100000 файлов: 
 
-ulimit -s 105000
+ulimit -s 105000  
 touch file{1..100000}.txt
+
+11.  fvgvf
 
 
 
