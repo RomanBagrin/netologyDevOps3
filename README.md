@@ -59,7 +59,13 @@ ulimit [-HSabcdefiklmnpqrstuvxPT [limit]]
 11.  Проверка условия.
 -d file      True if file exists and is a directory.
 
-12. лрол
+12. Создал соответствующие подкаталоги, куда скопировал bash. Потом в начало $PATH добавил в нужном порядке подкаталоги:
+
+export PATH=/tmp/new_path_directory:/usr/local/bin/:/bin:$PATH
+
+В результате type -a bash вывела строки в нужном порядке.
+
+
 
 
 
