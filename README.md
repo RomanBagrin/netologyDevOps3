@@ -37,4 +37,18 @@ HISTCONTROL
               ject  to the value of HISTIGNORE.  The second and subsequent lines of a multi-line compound command are not tested, and are added to the history regardless of the value of
               HISTCONTROL.
 	      
-9. оророр	      
+9. Фигурные скобки используются при групповых командах. В скобках перечисляются значения, которые будут применены последовательно для каждой из выполенных команд. Об этом говорится в строке 212:
+
+{ list; }
+              list  is  simply  executed in the current shell environment.  list must be terminated with a newline or semicolon.  This is known as a group command.  The return status is
+              the exit status of list.  Note that unlike the metacharacters ( and ), { and } are reserved words and must occur where a reserved  word  is  permitted  to  be  recognized.
+              Since they do not cause a word break, they must be separated from list by whitespace or another shell metacharacter.
+
+10. Создать 100000 файлов: 
+
+ulimit -s 105000
+touch file{1..100000}.txt
+
+
+
+
