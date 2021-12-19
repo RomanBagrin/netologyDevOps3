@@ -51,7 +51,8 @@ touch file{1..100000}.txt
 
 300000 файлов создать не получается, выдается сообщение "ulimit: stack size: cannot modify limit: Operation not permitted". 
 
-Хелп говорит
+Хелп говорит, что нужны рутовые права:
+
 ulimit [-HSabcdefiklmnpqrstuvxPT [limit]]
               Provides control over the resources available to the shell and to processes started by it, on systems that allow such control.  The -H and -S options specify that the hard   or soft limit is set for the given resource.  <b> A hard limit cannot be increased by a non-root user once it is set </b>; a soft limit may be increased up to the value of the hard     limit.  If neither -H nor -S is specified, both the soft and hard limits are set.  
 
