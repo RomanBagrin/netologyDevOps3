@@ -15,9 +15,16 @@ Vagrant.configure("2") do |config|
 	v.customize ["modifyvm", :id, "--cpus", "3"]
 	end
 end
+
 7. Подключился по ssh, попрактиковался
+
 8. для поиска номера строки и имени переменной воспользуемся командой grep:
+
 man bash |grep history -n 
+
 Среди выведенных строк будет следующее:
+
 1886:              value  less  than zero, the number of history entries is not limited.  By default, the number of history entries is set to the value of the HISTSIZE shell variable.
+
 Таким образом, в строке мануала 1886 указано, что в переменной HISTSIZE задается размер журнала команд. 
+
